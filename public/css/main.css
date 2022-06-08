@@ -1,0 +1,287 @@
+:root{
+    --primary: rgb(137, 208, 231);
+    --contrast-box: rgb(0, 0, 0,0.75);
+    --accent:rgb(238, 248, 252);
+
+}
+
+#page-container{
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+#review-container{
+    width:65%;
+    margin: 5vh auto;
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+
+}
+#review-container input[type="number"]{
+    display:block;
+    margin:3vh 0 1vh 0;
+    width:5%;
+}
+#review-container input[type="text"]{
+    display:block;
+    margin:3vh 0;
+    width:15%;
+}
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: var(--primary);
+    position: fixed;
+    min-height: 100vh;
+}
+#nav-list{
+    margin-top:10vh;
+}
+#sidebar ul li{
+    list-style: none;
+    padding: 0;
+    margin: 2vh auto 10vh auto;
+    text-align: center;
+}
+#sidebar h3{
+    text-align: center;
+    margin: 20px 0;
+    color:black;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#sidebar ul li a{
+    text-decoration: none;
+    color:white;
+    border-bottom: #fff 1px solid;
+        background-color: grey;
+    border: grey 5px solid;
+    border-radius: 50px 1px;
+    padding: 0 20px;
+
+}
+#sidebar ul li.active a{
+    color: grey;
+    text-decoration: underline;
+    border-bottom: none;
+        background-color: #fff;
+    border: #fff 5px solid;
+    border-radius: 50px 1px;
+    padding: 0 20px;
+}
+#sidebar ul li a:hover{
+    color: grey;
+    text-decoration: underline;
+    border-bottom: none;
+    background-color: #fff;
+    border: #fff 5px solid;
+    border-radius: 50px 1px;
+    padding: 0 20px;
+
+}
+#main-page{
+    width: 100%;
+    margin-left: 250px;
+}
+#splash{
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+}
+#splash h1{
+    font-style: bold;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+#splash h4{
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#hours{
+    margin: 0 auto;
+    width: 25%;
+}
+#business-info{
+    margin-top:2vh;
+}
+#store-info details p{
+    margin: 0 auto;
+    width: 50%;
+}
+#vanity{
+    position: absolute;
+    bottom:0;
+    font-size: .75em;
+    color: white;
+    font-family: 'Send Flowers', cursive;
+    text-align: center;
+    margin:0 auto;
+}
+#services{
+    margin-top: 5vh;
+}
+#experts{
+    margin-top: 5vh;
+}
+#repair-table-container{
+    background-color: var(--accent);
+}
+h2{
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    text-align: center;
+    margin: 0 auto 10vh auto;
+}
+
+.service:nth-child(2n){
+    background-color: var(--accent)
+}
+.service-photo{
+    width: 10vw;
+    height: auto;
+    display:inline-block;
+}
+
+.service-tag{
+    display: inline-block;
+    width: 70%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.5em;
+}
+.review-text{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.25em;
+
+}
+.service-name{
+    margin-top:1vh;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.service-price{
+    text-align: center;
+}
+#employeeCarousel{
+    width:50%;
+    margin: 0 auto;
+}
+.carousel-caption{
+    background-color: var(--contrast-box)
+}
+.carousel-caption h5,.carousel-caption p{
+    color:white;
+    opacity: 1;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.carousel-control-next-icon{
+    background-color: var(--contrast-box)
+}
+.carousel-control-prev-icon{
+    background-color: var(--contrast-box)
+}
+.employee-card{
+    width:250px;
+}
+#employee-cards{
+    display: none;
+}
+#uwu{
+    width:50%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 1vh auto 5vh;
+}
+#about{
+    font-family: 'Josefin Sans', sans-serif;
+}
+#repair-table-text{
+    display:inline-block;
+    width:30%;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin: 15vh auto 5vh;
+}
+#repair-table{
+    display:inline-block;
+    width:30%;
+    margin: 5vh auto;
+}
+#repair-table-container{
+    margin: 5vh auto 5vh;
+    display:flex;
+    
+}
+#repair-table td, #repair-table thead{
+    text-align: center;
+}
+#review-btn{
+    margin-top:1vh;
+}
+#booking{
+    font-family: 'Josefin Sans', sans-serif;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color:var(--accent);
+}
+#booking h2{
+    padding-top:5vh;
+}
+#about{
+    min-height: 100vh;
+    padding-top:5vh;
+}
+#about-us-history{
+    width:65%;
+    margin: 5vh auto;
+}
+#booking-app{
+    margin: 2vh auto;
+    text-align: center;
+    width:50%;
+}
+/* If below 600px */
+@media screen and (max-width: 800px)  {
+    .service-review{
+        display:none;
+    }
+    #sidebar {
+        min-width: 150px;
+        max-width: 150px;
+        background: var(--primary);
+        position: fixed;
+        min-height: 100vh;
+    }
+    #main-page{
+        width: 100%;
+        margin-left: 150px;
+    }
+    .service-tag{
+        display: block;
+        width: 100%;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 1em;
+    }
+    .service-photo{
+        display: none;
+    }
+    .service{
+        width: 120%;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    #employeeCarousel{
+        display:none;
+    }
+    #employee-cards{
+        display: block;
+        width: 100%;
+        margin: 2vh auto 0 auto;
+    }
+    #employee-card-row{
+        margin: 2vh auto 0 auto;
+    }
+    .employee-card{
+        margin-bottom: 2vh;
+    }
+}
